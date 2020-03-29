@@ -1,0 +1,8 @@
+# Python Environments
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
