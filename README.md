@@ -7,3 +7,8 @@ In this algorithm, I implement a neural network on the classic IRIS dataset. Fol
 This is a Kaggle competition (https://www.kaggle.com/c/titanic/overview). 
 
 I used a gradient boosting classifier. I cleaned data (filled in NaN's), one-hot'd categorical variables, and used performed a grid search to optimize the hyperparameters of the gradient boosing classifier.
+
+## MNIST Competition
+This is a Kaggle competition (https://www.kaggle.com/c/digit-recognizer/overview).
+
+I used a convolutional neural network to classify handwritten digits with an accuracy of 97%. The algorithm was written with PyTorch, and its archictecture is Convolution + ReLU -> Max Pooling -> Convolution + ReLU -> Max Pooling -> Feed-Forward Neural Network -> Softmax.
