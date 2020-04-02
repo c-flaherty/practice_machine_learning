@@ -7,6 +7,8 @@ Results: My model achieved 83% accuracy on the evaluation dataset, placing me at
 
 Methodology: My model was simple. I used the pretrained "BERT-base-cased" model provided in the Transformers package along with a sequence classification head. I trained it with 4 epochs on 90% of the training data.
 
+Method #2: I also created another model that was more of an experiment. While BERT is pre-trained for text classification, GPT-2 is only trained for next word prediction. I wanted to see if it could be useful for sequence classification as well. To do so, I added a special token ("[CLS]") at the end of every tweet, added this tweet to the tokenizer vocabulary, and then adding a linear layer on top of the embedding of this special token (conditioned on the tweet). I trained this layer over 4 epochs and was able to achieve an evaluation accuracy of 81%.
+
 ## MNIST Competition
 This is a Kaggle competition (https://www.kaggle.com/c/digit-recognizer/overview).
 
